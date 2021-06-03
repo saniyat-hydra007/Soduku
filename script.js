@@ -482,18 +482,23 @@ var utils = (() => {
     function descriptionComponent(options) {
       var { className, infoLevel } = options;
   
-      var technical = `
+      var technical = `` 
+      /*`
         In this demo,
         <a href='https://en.wikipedia.org/wiki/Backtracking'>
           backtracking algorithm
         </a> is used for <em>making</em>
-        the sudoku project.`;
+        the sudoku project.` 
+      */
+        ;
   
-      var description = `
+      var description = `` 
+      /* `
         Difficulty and solvability is
         totally random as I randomly left a certain number of hints
-        from a full-filled board.
-      `;
+        from a full-filled board.`
+        */
+        ;
   
       if (infoLevel === 'full') {
         return `
